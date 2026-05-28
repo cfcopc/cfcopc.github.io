@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Man, Woman, and Family — A Conference, Sep 25-26, 2026</title>
+<meta name="description" content="A two-day conference on Man, Woman, and Family, September 25-26, 2026 in O'Fallon, Missouri. Hosted by Covenant Family Church (OPC).">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --paper: #faf7f1;
+    --paper-2: #f1ece1;
+    --ink: #1a1814;
+    --ink-soft: #4d4940;
+    --muted: #8a8478;
+    --rule: #ddd5c5;
+    --sepia: #8a4f2c;
+    --sepia-dark: #6b3d22;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    margin: 0 0 0.4em;
+    line-height: 1.15;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+  }
+
+  p { margin: 0 0 1em; }
+
+  a { color: var(--sepia); transition: color 0.15s; }
+  a:hover { color: var(--ink); }
+
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .container-narrow {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .smallcaps {
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--sepia);
+  }
+
+  hr.ornament {
+    border: 0;
+    text-align: center;
+    margin: 3rem auto;
+    color: var(--sepia);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  hr.ornament::before {
+    content: "— · —";
+    letter-spacing: 0.5em;
+  }
+
+  /* ---------- Top bar ---------- */
+  .topbar {
+    border-bottom: 1px solid var(--rule);
+    padding: 1.25rem 0;
+    background: var(--paper);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .topbar-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .topbar-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    font-style: italic;
+  }
+  .topbar-nav {
+    display: flex;
+    gap: 2rem;
+  }
+  .topbar-nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  .topbar-nav a:hover { color: var(--sepia); }
+  @media (max-width: 720px) {
+    .topbar-nav { display: none; }
+  }
+
+  /* ---------- Masthead ---------- */
+  .masthead {
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+    border-bottom: 1px solid var(--rule);
+  }
+  .issue-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+  }
+  .masthead-title {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+  }
+  .masthead-title em {
+    font-style: italic;
+    color: var(--sepia);
+    font-weight: 400;
+  }
+  .masthead-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--ink-soft);
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.4;
+  }
+  .masthead-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.05em;
+  }
+  .masthead-meta .dot {
+    width: 4px; height: 4px;
+    background: var(--sepia);
+    border-radius: 50%;
+  }
+
+  /* ---------- Banner image as plate ---------- */
+  .plate {
+    max-width: 1080px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+  }
+  .plate-inner {
+    border: 1px solid var(--rule);
+    padding: 1.25rem;
+    background: var(--paper);
+  }
+  .plate img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .plate-caption {
+    text-align: center;
+    margin-top: 1.25rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+
+  /* ---------- Lead paragraph ---------- */
+  .lead {
+    padding: 0 0 4rem;
+  }
+  .lead-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.55rem;
+    line-height: 1.5;
+    color: var(--ink);
+    font-weight: 400;
+  }
+  .lead-text::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 4.5em;
+    float: left;
+    line-height: 0.85;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    color: var(--sepia);
+  }
+
+  /* ---------- Section base ---------- */
+  section.editorial { padding: 4rem 0; }
+  .section-head {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .section-head h2 {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 500;
+    margin: 0.75rem 0 0.5rem;
+  }
+  .section-head h2 em { font-style: italic; color: var(--sepia); font-weight: 400; }
+  .section-head .section-deck {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  /* ---------- Speakers ---------- */
+  .speakers { background: var(--paper); }
+  .speaker {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+  }
+  .speaker:last-child { margin-bottom: 0; }
+  .speaker.flip { grid-template-columns: 7fr 5fr; }
+  .speaker.flip .speaker-image-col { order: 2; }
+  .speaker.flip .speaker-text-col { order: 1; }
+
+  @media (max-width: 800px) {
+    .speaker, .speaker.flip {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .speaker.flip .speaker-image-col { order: 0; }
+    .speaker.flip .speaker-text-col { order: 1; }
+    .speaker .speaker-image-col {
+      max-width: 420px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  .speaker-image-col {
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    background: var(--paper-2);
+  }
+  .speaker-image-col img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 22%;
+    display: block;
+    transition: transform 0.6s ease, filter 0.5s ease;
+    filter: saturate(0.9);
+  }
+  .speaker:hover .speaker-image-col img {
+    transform: scale(1.04);
+    filter: saturate(1.05);
+  }
+  .speaker:hover .speaker-name {
+    color: var(--sepia);
+  }
+  .speaker-name {
+    transition: color 0.25s ease;
+  }
+  .speaker:hover .church-arrow {
+    transform: translate(3px, -3px);
+    opacity: 1;
+  }
+  .church-arrow {
+    display: inline-block;
+    margin-left: 0.4rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85em;
+    color: var(--sepia);
+    opacity: 0.35;
+    transform: translate(0, 0);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .speaker-num-label {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--sepia);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .speaker-name {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    line-height: 1.05;
+  }
+  .speaker-church {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--sepia);
+    margin-bottom: 1.5rem;
+  }
+  .speaker-bio {
+    font-size: 1rem;
+    color: var(--ink-soft);
+    line-height: 1.75;
+  }
+
+  /* ---------- Details panel ---------- */
+  .details {
+    background: var(--paper-2);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .details-grid {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .details-grid > div {
+    max-width: 280px;
+    width: 100%;
+  }
+  .detail-label {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--sepia);
+    margin-bottom: 0.5rem;
+  }
+  .detail-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+  .detail-sub {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.25rem;
+  }
+
+  /* ---------- Tickets ---------- */
+  .tickets-list {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .ticket-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    padding: 1.75rem 0;
+    border-bottom: 1px solid var(--rule);
+    gap: 2rem;
+  }
+  .ticket-row:first-child { border-top: 1px solid var(--rule); }
+  .ticket-tier-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+  }
+  .ticket-tier-name em { font-style: italic; color: var(--sepia); font-weight: 400; font-size: 0.85em; margin-left: 0.5rem; }
+  .ticket-tier-desc {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  .ticket-price-col {
+    text-align: right;
+  }
+  .ticket-row-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .ticket-row-price-sub {
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 0.3rem;
+  }
+  .ticket-fine {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 2.5rem;
+  }
+  .ticket-cta-row {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.85rem 2.25rem;
+    background: var(--ink);
+    color: var(--paper) !important;
+    border: 1px solid var(--ink);
+    text-decoration: none;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: all 0.15s;
+  }
+  .btn:hover { background: var(--sepia); border-color: var(--sepia); }
+
+  /* ---------- Schedule ---------- */
+  .schedule { background: var(--paper); }
+  .schedule-day { margin-bottom: 3.5rem; }
+  .schedule-day:last-of-type { margin-bottom: 0; }
+  .schedule-day-head {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .schedule-day-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--sepia);
+    margin-bottom: 0.4rem;
+  }
+  .schedule-day-title {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 500;
+    margin-bottom: 0.35rem;
+  }
+  .schedule-day-title em {
+    font-style: italic;
+    color: var(--sepia);
+    font-weight: 400;
+  }
+  .schedule-day-date {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .schedule-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 2rem;
+    align-items: baseline;
+    padding: 1.25rem 0;
+    border-bottom: 1px dotted var(--rule);
+  }
+  .schedule-row:last-child { border-bottom: 0; }
+  .schedule-time {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--sepia);
+    line-height: 1.4;
+  }
+  .schedule-talk {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--ink);
+    line-height: 1.3;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+  }
+  .schedule-talk.schedule-interlude { color: var(--sepia); }
+  .schedule-speaker {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .schedule-note {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-left: 0.35rem;
+    font-weight: 400;
+  }
+  .schedule-foot {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 3rem;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-block {
+    text-align: center;
+    padding: 5rem 2rem;
+    border-top: 1px solid var(--rule);
+  }
+  .contact-block h2 em { font-style: italic; color: var(--sepia); font-weight: 400; }
+  .contact-block p { color: var(--ink-soft); }
+  .contact-email-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+    color: var(--sepia);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.3rem;
+    word-break: break-all;
+  }
+  .contact-email-link:hover { color: var(--ink); border-color: var(--ink); }
+
+  /* ---------- Footer ---------- */
+  footer {
+    background: var(--paper-2);
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  footer p { margin: 0.3rem 0; font-size: 0.9rem; color: var(--ink-soft); }
+  footer .footer-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+  }
+
+  /* ---------- Mobile (<=600px) ---------- */
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+
+    .container, .container-narrow { padding: 0 1.25rem; }
+    .topbar-inner { padding: 0 1.25rem; }
+    .topbar { padding: 1rem 0; }
+    .topbar-brand { font-size: 1.2rem; }
+
+    .masthead { padding: 3rem 1.25rem 2rem; }
+    .issue-line { font-size: 0.85rem; margin-bottom: 1rem; }
+    .masthead-subtitle { font-size: 1.15rem; margin-bottom: 2rem; }
+    .masthead-meta {
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .masthead-meta .dot { display: none; }
+
+    .plate { margin: 2.5rem auto; padding: 0 1.25rem; }
+    .plate-inner { padding: 0.6rem; }
+    .plate-caption { font-size: 0.85rem; margin-top: 0.85rem; }
+
+    .lead { padding: 0 0 2.5rem; }
+    .lead-text { font-size: 1.2rem; line-height: 1.55; }
+    .lead-text::first-letter { font-size: 3.5em; padding-top: 0.15rem; }
+
+    hr.ornament { margin: 2.25rem auto; font-size: 1.2rem; }
+
+    section.editorial { padding: 3rem 0; }
+    .section-head { margin-bottom: 2.25rem; }
+    .section-head .section-deck { font-size: 1.05rem; }
+
+    .speaker, .speaker.flip {
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .speaker-name { font-size: 1.9rem; }
+    .speaker-church { font-size: 1.05rem; margin-bottom: 1rem; }
+    .speaker-num-label { font-size: 1rem; }
+
+    .detail-value { font-size: 1.2rem; }
+
+    .schedule-row {
+      grid-template-columns: 1fr;
+      gap: 0.4rem;
+      padding: 1.1rem 0;
+    }
+    .schedule-time { font-size: 0.7rem; }
+    .schedule-talk { font-size: 1.2rem; }
+    .schedule-speaker { font-size: 1rem; }
+    .schedule-day-head {
+      margin-bottom: 1rem;
+      padding-bottom: 1.25rem;
+    }
+    .schedule-day { margin-bottom: 2.5rem; }
+    .schedule-foot { margin-top: 2rem; }
+
+    .ticket-row {
+      padding: 1.35rem 0;
+      gap: 1rem;
+    }
+    .ticket-tier-name { font-size: 1.35rem; }
+    .ticket-tier-name em {
+      display: block;
+      margin-left: 0;
+      margin-top: 0.1rem;
+      font-size: 0.9em;
+    }
+    .ticket-tier-desc { font-size: 0.88rem; }
+    .ticket-row-price { font-size: 1.8rem; }
+    .ticket-fine { font-size: 0.88rem; margin-top: 2rem; }
+
+    .contact-block { padding: 3rem 1.25rem; }
+    .contact-block h2 { font-size: 2rem; }
+    .contact-email-link {
+      font-size: 1rem;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+      padding-bottom: 0.2rem;
+      margin-top: 1.25rem;
+    }
+
+    footer { padding: 2rem 1.25rem; }
+    footer .footer-title { font-size: 1.15rem; }
+    footer p { font-size: 0.85rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand" href="#top">Man, Woman, &amp; Family</a>
+    <nav class="topbar-nav">
+      <a href="#speakers">Speakers</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#details">Details</a>
+      <a href="#tickets">Tickets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+<section class="masthead">
+  <div class="issue-line">— A Conference of Covenant Family Church —</div>
+  <h1 class="masthead-title">Man, Woman, <em>&amp;</em> Family</h1>
+  <p class="masthead-subtitle">A weekend in O'Fallon, Missouri, given to the Bible's vision for manhood, womanhood, and the home.</p>
+  <div class="masthead-meta">
+    <span>September 25 &ndash; 26, 2026</span>
+    <span class="dot"></span>
+    <span>Liberty Church, O'Fallon, Missouri</span>
+    <span class="dot"></span>
+    <span>Hosted by Covenant Family Church</span>
+  </div>
+</section>
+
+<div class="plate">
+  <div class="plate-inner">
+    <img src="IMG_1199.JPG" alt="A field at sunset in the Missouri countryside, with the conference title overlaid">
+  </div>
+</div>
+
+<hr class="ornament">
+
+<section id="speakers" class="editorial speakers">
+  <div class="container">
+    <div class="section-head">
+      <div class="smallcaps">The Speakers</div>
+      <h2><em>Three</em> pastors on the family.</h2>
+      <p class="section-deck">Faithful ministers from Missouri, Wisconsin, and Georgia.</p>
+    </div>
+
+    <a class="speaker" href="https://covenantfamilychurch.net/" target="_blank" rel="noreferrer">
+      <div class="speaker-image-col">
+        <img src="peter-bringe.jpeg" alt="Peter Bringe">
+      </div>
+      <div class="speaker-text-col">
+        <span class="speaker-num-label">No. I</span>
+        <h3 class="speaker-name">Peter Bringe</h3>
+        <div class="speaker-church">Covenant Family OPC &middot; Wentzville, Missouri<span class="church-arrow">&#8599;</span></div>
+        <p class="speaker-bio">
+          Peter Bringe is the pastor of Covenant Family Church (Wentzville, MO), a congregation of the Orthodox Presbyterian Church. He first joined it in 2006 and has served as its pastor since 2018. Peter has a BA in Bible and Theology from Whitefield College and a MDiv from Covenant Theological Seminary. He also serves on the board of the Bahnsen Institute and teaches fife for a local fife and drum corps. Peter is married to Melody and they have been blessed thus far with seven children.
+        </p>
+      </div>
+    </a>
+
+    <a class="speaker flip" href="https://www.graceopcsheboygan.com/" target="_blank" rel="noreferrer">
+      <div class="speaker-image-col">
+        <img src="dejong.webp" alt="Brian De Jong">
+      </div>
+      <div class="speaker-text-col">
+        <span class="speaker-num-label">No. II</span>
+        <h3 class="speaker-name">Brian De Jong</h3>
+        <div class="speaker-church">Grace OPC &middot; Sheboygan, Wisconsin<span class="church-arrow">&#8599;</span></div>
+        <p class="speaker-bio">
+          Born in Bozeman, Montana in 1963, Pastor De Jong grew up across Michigan, Iowa, California, New Jersey, and Illinois. He earned a BA in Cinema and Photography from Southern Illinois University-Carbondale and an MDiv from Reformed Theological Seminary in Jackson. Ordained in 1993 (PCA) for campus ministry at the University of Florida, he later planted a church in Marion, Illinois, and pastored Covenant OPC in Brighton, Michigan. Since 2005 he has served as pastor of Grace OPC in Sheboygan, and as chairman of the Candidates and Credentials Committee and Historian of the Presbytery of Wisconsin and Minnesota. He and DeLou have six children and eight grandchildren.
+        </p>
+      </div>
+    </a>
+
+    <a class="speaker" href="https://heritageopc.org/" target="_blank" rel="noreferrer">
+      <div class="speaker-image-col">
+        <img src="meyer.jpeg" alt="Mike Myers">
+      </div>
+      <div class="speaker-text-col">
+        <span class="speaker-num-label">No. III</span>
+        <h3 class="speaker-name">Mike Myers</h3>
+        <div class="speaker-church">Heritage OPC &middot; Royston, Georgia<span class="church-arrow">&#8599;</span></div>
+        <p class="speaker-bio">After graduating from Greenville Presbyterian Theological Seminary in May 2013, Mike Myers was called to be the organizing pastor of Heritage Presbyterian Church (OPC). He was ordained on December 6, 2013. When the church particularized in September 2017, Heritage called Pastor Myers to stay on as the minister. Mike and his wife Katy have eight children.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section id="schedule" class="editorial schedule">
+  <div class="container-narrow">
+    <div class="section-head">
+      <div class="smallcaps">The Program</div>
+      <h2>Order of the <em>weekend</em>.</h2>
+      <p class="section-deck">Two days of teaching, fellowship, and a meal together.</p>
+    </div>
+
+    <div class="schedule-day">
+      <div class="schedule-day-head">
+        <div class="schedule-day-label">Day One</div>
+        <h3 class="schedule-day-title">Friday <em>Evening</em></h3>
+        <div class="schedule-day-date">September 25, 2026</div>
+      </div>
+
+      <div class="schedule-row">
+        <div class="schedule-time">6:30 &ndash; 6:45 PM</div>
+        <div>
+          <div class="schedule-talk">Introduction</div>
+          <div class="schedule-speaker">Peter Bringe</div>
+        </div>
+      </div>
+
+      <div class="schedule-row">
+        <div class="schedule-time">6:45 &ndash; 7:30 PM</div>
+        <div>
+          <div class="schedule-talk">The Goodness of Manhood, Womanhood, and Family</div>
+          <div class="schedule-speaker">Brian De Jong</div>
+        </div>
+      </div>
+
+      <div class="schedule-row">
+        <div class="schedule-time">7:30 &ndash; 9:00 PM</div>
+        <div>
+          <div class="schedule-talk schedule-interlude">Fellowship</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule-day">
+      <div class="schedule-day-head">
+        <div class="schedule-day-label">Day Two</div>
+        <h3 class="schedule-day-title"><em>Saturday</em></h3>
+        <div class="schedule-day-date">September 26, 2026</div>
+      </div>
+
+      <div class="schedule-row">
+        <div class="schedule-time">9:00 &ndash; 9:45 AM</div>
+        <div>
+          <div class="schedule-talk">Becoming Mature Men in Christ</div>
+          <div class="schedule-speaker">Mike Myers</div>
+        </div>
+      </div>
+
+      <div class="schedule-row">
+        <div class="schedule-time">10:00 &ndash; 10:45 AM</div>
+        <div>
+          <div class="schedule-talk">Becoming Mature Women in Christ</div>
+          <div class="schedule-speaker">Mike Myers</div>
+        </div>
+      </div>
+
+      <div class="schedule-row">
+        <div class="schedule-time">11:00 &ndash; 11:45 AM</div>
+        <div>
+          <div class="schedule-talk">The Christian Family</div>
+          <div class="schedule-speaker">Brian De Jong</div>
+        </div>
+      </div>
+
+      <div class="schedule-row">
+        <div class="schedule-time">12:00 &ndash; 1:00 PM</div>
+        <div>
+          <div class="schedule-talk schedule-interlude">Lunch<span class="schedule-note">(provided)</span></div>
+        </div>
+      </div>
+
+      <div class="schedule-row">
+        <div class="schedule-time">1:15 &ndash; 2:00 PM</div>
+        <div>
+          <div class="schedule-talk">Q&amp;A Panel</div>
+          <div class="schedule-speaker">All Speakers</div>
+        </div>
+      </div>
+
+      <div class="schedule-row">
+        <div class="schedule-time">2:15 &ndash; 3:00 PM</div>
+        <div>
+          <div class="schedule-talk">Men, Women, Family, and Courage</div>
+          <div class="schedule-speaker">Peter Bringe</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="schedule-foot">Doors open Saturday morning at 8:30.</p>
+  </div>
+</section>
+
+<section id="details" class="editorial details">
+  <div class="container">
+    <div class="section-head">
+      <h2>The <em>venue</em>.</h2>
+    </div>
+    <div class="details-grid">
+      <div>
+        <span class="detail-label">Venue</span>
+        <div class="detail-value">Liberty Church</div>
+        <div class="detail-sub">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=709+Crestview+Dr+O%27Fallon+MO+63366" target="_blank" rel="noreferrer">709 Crestview Dr<br>O'Fallon, MO 63366</a><br>
+          <a href="tel:+16362404412">(636) 240-4412</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tickets" class="editorial">
+  <div class="container">
+    <div class="section-head">
+      <div class="smallcaps">Registration</div>
+      <h2>Conference <em>pricing</em>.</h2>
+      <p class="section-deck">Save ten dollars per adult by registering before August 26.</p>
+    </div>
+
+    <div class="tickets-list">
+
+      <div class="ticket-row">
+        <div>
+          <div class="ticket-tier-name">Ages 15 &amp; Up <em>— Early Bird</em></div>
+          <div class="ticket-tier-desc">Available through August 26, 2026</div>
+        </div>
+        <div class="ticket-price-col">
+          <div class="ticket-row-price">$20</div>
+          <div class="ticket-row-price-sub">per person</div>
+        </div>
+      </div>
+
+      <div class="ticket-row">
+        <div>
+          <div class="ticket-tier-name">Ages 15 &amp; Up</div>
+          <div class="ticket-tier-desc">Standard rate after August 26, 2026</div>
+        </div>
+        <div class="ticket-price-col">
+          <div class="ticket-row-price">$30</div>
+          <div class="ticket-row-price-sub">per person</div>
+        </div>
+      </div>
+
+      <div class="ticket-row">
+        <div>
+          <div class="ticket-tier-name">Youth, Ages 4 &ndash; 14</div>
+          <div class="ticket-tier-desc">For the whole weekend</div>
+        </div>
+        <div class="ticket-price-col">
+          <div class="ticket-row-price">$5</div>
+          <div class="ticket-row-price-sub">per child</div>
+        </div>
+      </div>
+
+      <div class="ticket-row">
+        <div>
+          <div class="ticket-tier-name">Under 4</div>
+          <div class="ticket-tier-desc">Little ones are warmly welcomed</div>
+        </div>
+        <div class="ticket-price-col">
+          <div class="ticket-row-price">Free</div>
+          <div class="ticket-row-price-sub">&nbsp;</div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="ticket-cta-row">
+      <a class="btn" href="https://events.ticketleap.com/tickets/covenant-family/man-women-and-family" target="_blank" rel="noreferrer">Buy Tickets</a>
+    </div>
+  </div>
+</section>
+
+<hr class="ornament">
+
+<section id="contact" class="contact-block">
+  <div class="smallcaps">Inquiries</div>
+  <h2 style="font-size: clamp(2.2rem, 5vw, 3rem); margin-top: 0.75rem;">For <em>any</em> question.</h2>
+  <p style="max-width: 520px; margin: 1rem auto 0;">Write to the event organizer for help with registration, lodging, or what to expect.</p>
+  <a class="contact-email-link" href="mailto:conferences@covenantfamilychurch.net">conferences@covenantfamilychurch.net</a>
+</section>
+
+<footer>
+  <p class="footer-title">Man, Woman, &amp; Family &mdash; 2026</p>
+  <p>September 25-26 &middot; Liberty Church &middot; O'Fallon, Missouri</p>
+  <p>Hosted by Covenant Family Church (Orthodox Presbyterian Church)</p>
+</footer>
+
+</body>
+</html>
